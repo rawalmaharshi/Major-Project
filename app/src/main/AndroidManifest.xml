@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="majorproject.example.automatedhome">
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name=".AllDevicesActivity"
+            android:label="All Devices" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name=".NewDevicesActivity"
+            android:label="All Devices" >
+        </activity>
+        <!-- Edit Product Activity -->
+        <activity
+            android:name=".UpdateDeviceState"
+            android:label="Edit Device State" >
+        </activity>
+    </application>
+
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
